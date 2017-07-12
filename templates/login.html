@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+<div class="container" style="padding-top: 50px">
+    <div class="row">
+{% if changed %}
+    <h1 style="color: green">URLS WERE CHANGED</h1>
+{% endif %}
+<form method="post">
+    		<div class="form-group">
+
+            <textarea  name="links" style="    height: 200px;
+    width: 300px;">{{ links }}
+                                </textarea>
+</div>
+    		<div class="form-group">
+
+    <input type="password" name="key" placeholder="Enter secret key" required="required"
+          />
+                </div>
+    <button  type="button" class="btn">
+        <span>Change Urls</span>
+    </button>
+</form>
+
+<p>Please edit urls and enter secret key to change youtube urls</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="icon" type="image/ico" href="{{ url_for('static', filename='favicon.ico') }}"/>
+        <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <meta charset="UTF-8">
+    <title>jimmer.cash</title>
+</head>
+<body>
+
+<div class="container-fluid">
+<h1><a href="https://wessie.myimarketslive.co">Start making profits now!</a></h1>
+  <h1>  <a class="text-left" href="http://www.imltrain.com/results/">More proof...</a></h1>
+
+{%for url in urls%}
+    <iframe  width="560" height="315" src="{{url}}" frameborder="0" allowfullscreen></iframe>
+{% endfor %}
+</div>
+<footer>
+<div class="container-fluid">
+	           James Westpfahl <a href="mailto:jimwestpfahl@me.com">jimwestpfahl@me.com<i class="glyphicon glyphicon-envelope
+	            social"></i></a>
+</div>
+    </footer>
+</body>
+</html>
