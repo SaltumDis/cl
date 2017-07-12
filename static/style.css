@@ -1,113 +1,143 @@
 html, body {
-      background-image:  linear-gradient(rgba(77, 105, 121, 0.66), rgba(255, 153, 153, 0.31)),url("/static/happy.jpg");
-    background-repeat: no-repeat;
-        height: 100%;
+    background-image: linear-gradient(rgba(28,28,28,0.9), rgba(231, 188, 192, 0.7)),url("/static/background.jpg");
+    height: initial;
     color: white;
     text-align: center;
-        font-size: 25px;
-
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-
+    font-size: 25px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 }
 
-.login-heading{
+.login-heading {
     font-size: 45px;
 }
-h1 a{
+
+h1 a {
     color: white;
 }
-.container {
 
-  width: 500px;
-  height: 0;
-  margin: 0 auto;
-    padding-top: 100px;
-
+.containerin {
+    height: 100vh;
+    width: 500px;
+    margin: 0 auto;
 }
 
 .login {
 
-  margin-top: 50px;
-  width: 450px;
+    margin-top: 50px;
+    width: 450px;
 }
-
 
 .input-txt {
     font-size: 20px;
-  width: 100%;
-  padding: 20px 10px;
-  margin-bottom: 10px;
+    width: 100%;
+    padding: 20px 10px;
+    margin-bottom: 10px;
 
 }
-
-
 
 .draw-border {
-  box-shadow: inset 0 0 0 4px white;
-  color:white;
-  -webkit-transition: color 0.25s 0.08333s;
-  transition: color 0.25s 0.08333s;
-  position: relative;
+    box-shadow: inset 0 0 0 4px white;
+    color: white;
+    -webkit-transition: color 0.25s 0.08333s;
+    transition: color 0.25s 0.08333s;
+    position: relative;
 }
+
 .draw-border::before, .draw-border::after {
-  border: 0 solid transparent;
-  box-sizing: border-box;
-  content: '';
-  pointer-events: none;
-  position: absolute;
-  width: 0;
-  height: 0;
-  bottom: 0;
-  right: 0;
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
 }
+
 .draw-border::before {
-  border-bottom-width: 4px;
-  border-left-width: 4px;
+    border-bottom-width: 4px;
+    border-left-width: 4px;
 }
+
 .draw-border::after {
-  border-top-width: 4px;
-  border-right-width: 4px;
+    border-top-width: 4px;
+    border-right-width: 4px;
 }
+
 .draw-border:hover {
-  color: black;
+    color: black;
 }
+
 .draw-border:hover::before, .draw-border:hover::after {
-  border-color:black;
-  -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
-  transition: border-color 0s, width 0.25s, height 0.25s;
-  width: 100%;
-  height: 100%;
+    border-color: black;
+    -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
+    transition: border-color 0s, width 0.25s, height 0.25s;
+    width: 100%;
+    height: 100%;
 }
+
 .draw-border:hover::before {
-  -webkit-transition-delay: 0s, 0s, 0.25s;
-          transition-delay: 0s, 0s, 0.25s;
+    -webkit-transition-delay: 0s, 0s, 0.25s;
+    transition-delay: 0s, 0s, 0.25s;
 }
+
 .draw-border:hover::after {
-  -webkit-transition-delay: 0s, 0.25s, 0s;
-          transition-delay: 0s, 0.25s, 0s;
+    -webkit-transition-delay: 0s, 0.25s, 0s;
+    transition-delay: 0s, 0.25s, 0s;
 }
 
 .btn {
     font-size: 22px;
     width: 105%;
     height: 3em;
-  background: none;
-  border: none;
-  cursor: pointer;
+    background: none;
+    border: none;
+    cursor: pointer;
 
 }
+
 .btn:focus {
-  outline: 2px dotted black;
+    outline: 2px dotted black;
 }
 
-footer{
+footer {
     text-align: right;
-    position: fixed;
     bottom: 0;
-    padding: 5px;
+    padding: 8px;
     font-size: 16px;
     width: 100%;
     color: white;
     background-color: rgba(0, 0, 0, 0.76);
+}
+
+.header {
+    border-style: groove;
+    border-right: none;
+    border-left: none;
+    background-color: rgba(0, 0, 0, 0.86);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.button {
+    text-shadow: 3px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: #7BB13F; /* Green */
+    border: none;
+    width: 400px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.buttons{
+    padding: 25px;
 }

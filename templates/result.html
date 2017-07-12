@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/ico" href="{{ url_for('static', filename='favicon.ico') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <meta charset="UTF-8">
+    <title>jimmer.cash</title>
+</head>
+<body>
+<div class="header">
+    <img src="{{ url_for('static', filename='banner.png') }}">
+</div>
+<div class="container">
+    <div class=" col-md-6 ">
+        <h1>Video 1...Watch This First</h1>
+        <small>(Want An Extra $600/Month?)</small>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/0jP13wwtGb8" frameborder="0"
+                allowfullscreen></iframe>
+    </div>
+    <div class=" col-md-6 ">
+        <h1>Video 2...Watch This Second</h1>
+        <small>(The IML Overview)</small>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Je7IVaglTZY" frameborder="0"
+                allowfullscreen></iframe>
+    </div>
+    <div class=" col-md-6 ">
+
+        <h1>Video 3...Watch This Third</h1>
+        <small>(Is "IML" Working?)</small>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/lrYhFRPnTHM" frameborder="0"
+                allowfullscreen></iframe>
+    </div>
+    <div class=" col-md-6 ">
+
+        <h1>Video 4...Watch This Fourth</h1>
+        <small>(Do The Products Work?)</small>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/zIkj5mf6TpA" frameborder="0"
+                allowfullscreen></iframe>
+    </div>
+    <div class="row buttons">
+        <div class=" col-md-6 ">
+            <a class="button" href="https://wessie.myimarketslive.co">Start making profits now!
+                <br/>
+                <small>Yes I want profits!</small>
+                <img src="{{ url_for('static', filename='arrow_right.png') }}"> </a>
+        </div>
+        <div class=" col-md-6 ">
+
+            <a class="button" href="http://www.imltrain.com/results/">See the Results
+                <br/>
+                <small>See the proof</small>
+                <img src="{{ url_for('static', filename='arrow_right.png') }}"> </a>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container">
+        James Westpfahl <a href="mailto:jimwestpfahl@me.com">jimwestpfahl@me.com</a>
+    </div>
+</footer>
+</body>
+</html>
