@@ -1,64 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" type="image/ico" href="{{ url_for('static', filename='favicon.ico') }}"/>
-    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" type="image/ico" href="{{ url_for('static', filename='img/favicon.ico') }}"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-social.css') }}">
 
     <meta charset="UTF-8">
-    <title>jimmer.cash</title>
+    <title>tradewithspenser.com</title>
 </head>
 <body>
 <div class="header">
-    <img src="{{ url_for('static', filename='banner.png') }}">
+    <img src="{{ url_for('static', filename='img/banner.png') }}">
 </div>
 <div class="container">
-    <div class=" col-md-6 ">
-        <h1>Video 1...Watch This First</h1>
-        <small>(Want An Extra $600/Month?)</small>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/0jP13wwtGb8" frameborder="0"
+    <div class="col-m-offset-1 col-m-10">
+        <h1>Watch complete IML overview</h1>
+        <small>to learn how to make money in your sleep.</small>
+        <iframe width="1120" height="630" src="https://www.youtube.com/embed/Th7Sm5C4z8U" frameborder="0"
                 allowfullscreen></iframe>
     </div>
-    <div class=" col-md-6 ">
-        <h1>Video 2...Watch This Second</h1>
-        <small>(The IML Overview)</small>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Je7IVaglTZY" frameborder="0"
-                allowfullscreen></iframe>
+    <div class="row">
+        <img class="img_comp" src="{{ url_for('static', filename='img/compensation.jpg')}}">
     </div>
-    <div class=" col-md-6 ">
-
-        <h1>Video 3...Watch This Third</h1>
-        <small>(Is "IML" Working?)</small>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/lrYhFRPnTHM" frameborder="0"
-                allowfullscreen></iframe>
-    </div>
-    <div class=" col-md-6 ">
-
-        <h1>Video 4...Watch This Fourth</h1>
-        <small>(Do The Products Work?)</small>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/zIkj5mf6TpA" frameborder="0"
-                allowfullscreen></iframe>
-    </div>
+</div>
+<div class="container">
     <div class="row buttons">
-        <div class=" col-md-6 ">
-            <a class="button" href="https://wessie.myimarketslive.co">Start making profits now!
+        <div class=" col-md-4 ">
+            <a class="btn socialbt btn-block btn-social btn-vk" href=http://snickelatti.myimarketslive.co">
+                <span class="fa fa-arrow-right"></span>Start making
+                profits now!
                 <br/>
                 <small>Yes I want profits!</small>
-                <img src="{{ url_for('static', filename='arrow_right.png') }}"> </a>
+            </a>
         </div>
-        <div class=" col-md-6 ">
+        <div class=" col-md-4 ">
 
-            <a class="button" href="http://www.imltrain.com/results/">See the Results
+            <a href="https://www.facebook.com/snickelatti" class="btn socialbt btn-block btn-social btn-facebook">
+                <span class="fa fa-facebook"></span>Add me on facebook
                 <br/>
-                <small>See the proof</small>
-                <img src="{{ url_for('static', filename='arrow_right.png') }}"> </a>
+                <small>To see results</small>
+            </a>
+        </div>
+        <div class=" col-md-4 ">
+
+            <a href="https://www.instagram.com/tradewithspenser/"
+               class="btn socialbt btn-block btn-social btn-instagram">
+                <span class="fa fa-instagram"></span>Add me on Instagram
+                <br/>
+                <small>To see results</small>
+            </a>
         </div>
     </div>
 </div>
 <footer>
-    <div class="container">
-        James Westpfahl <a href="mailto:jimwestpfahl@me.com">jimwestpfahl@me.com</a>
-    </div>
-</footer>
+    Spenser Nickelatti
+    </footer>
 </body>
 </html>

@@ -1,6 +1,6 @@
 html, body {
-    background-image: linear-gradient(rgba(28,28,28,0.9), rgba(231, 188, 192, 0.7)),url("/static/background.jpg");
-    height: initial;
+    background-image: linear-gradient(rgba(28,28,28,0.9), rgba(231, 188, 192, 0.7)),url("/static/img/background.jpg");
+    background-repeat: repeat;
     color: white;
     text-align: center;
     font-size: 25px;
@@ -17,14 +17,21 @@ h1 a {
 }
 
 .containerin {
-    height: 100vh;
-    width: 500px;
+    width: 800px;
+    margin: 0 auto;
+    padding-top: 50px;
+
+}
+
+.container{
+    padding-top: 25px;
+    max-width: 1400px;
+    width: 100%;
     margin: 0 auto;
 }
 
 .login {
-
-    margin-top: 50px;
+margin-left: 175px;
     width: 450px;
 }
 
@@ -103,13 +110,15 @@ h1 a {
 }
 
 footer {
-    text-align: right;
+    margin-top: 40px;
+    text-align: center;
     bottom: 0;
     padding: 8px;
+    padding-right: 20px;
     font-size: 16px;
     width: 100%;
     color: white;
-    background-color: rgba(0, 0, 0, 0.76);
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .header {
@@ -138,6 +147,28 @@ footer {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.socialbt {
+    padding-left: 80px !important;
+    width: 400px;
+    cursor: pointer;
+    margin-top: 25px;
+    height: 100px;
+    padding-top: 20px;
+
+
+}
+.socialbt .fa {
+    margin-left: 15px;
+    padding-right: 40px;
+    padding-top: 40px;
+}
 .buttons{
     padding: 25px;
+    margin-left: 20px;
+}
+
+.img_comp{
+    padding-top: 40px;
+    width: 100%;
+    height: auto;
 }

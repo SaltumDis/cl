@@ -6,12 +6,10 @@ from flask import render_template
 from flask import request as req
 from requests.auth import HTTPBasicAuth
 
-sys.path.insert(0, '/home/username/public_html/cgi-bin/myenv/lib/python2.6/site-packages')
-
 app = Flask(__name__)
 
-api = "f4a8cc506a606f627c3aea89886a3ae4-us13"
-url = "https://us13.api.mailchimp.com/3.0/lists/34b4669e4c/members/"
+api = ""
+url = ""
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
